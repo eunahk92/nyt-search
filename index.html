@@ -26,11 +26,11 @@
                 <form>
                     <div class="form-group">
                         <label for="formGroupExampleInput">Search Term:</label>
-                        <input type="text" class="form-control" id="termInput" placeholder="Keyword">
+                        <input type="text" class="form-control" id="termInput" placeholder="Ex: Martin Luther King">
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput2">Number of Records to Retrieve:</label>
-                        <select class="form-control">
+                        <select class="numRecords form-control">
                             <option value="1">1</option>
                             <option value="5" selected>5</option>
                             <option value="10">10</option>
@@ -38,11 +38,11 @@
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput2">Start Year (optional):</label>
-                        <input type="text" class="form-control" id="startYear" placeholder="Start Year">
+                        <input type="text" class="form-control" id="startYear" placeholder="Ex: 1992">
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput2">End Year (optional):</label>
-                        <input type="text" class="form-control" id="endYear" placeholder="End Year">
+                        <input type="text" class="form-control" id="endYear" placeholder="Ex: 1998">
                     </div>
                     <button type="button" class="btn btn-secondary" id="searchBtn">Search</button>
                     <button type="button" class="btn btn-secondary" id="clearBtn">Clear Results</button>
@@ -62,17 +62,6 @@
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    searchArticles = () => {
-        
-    }
+<script src="script.js"></script>
 
-    clearResults = () => {
-        $('#articles').clear();
-    }
-
-    $('#searchBtn').on('click', searchArticles);
-    $('#clearBtn').on('click', clearResults);
-
-</script>
 </html>
